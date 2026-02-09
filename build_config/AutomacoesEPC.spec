@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['mover_pdfs_gui.py'],
+    ['../main.py'],
     pathex=[],
     binaries=[],
     datas=[],

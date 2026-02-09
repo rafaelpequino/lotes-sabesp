@@ -24,7 +24,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "[2/3] Limpando arquivos antigos..."
-rm -rf dist build mover_pdfs_gui.spec 2>/dev/null
+rm -rf dist build main.spec 2>/dev/null
 
 echo "[3/3] Gerando executável... (isso pode levar 1-2 minutos)"
 echo ""
@@ -35,7 +35,7 @@ pyinstaller \
   --name="Mover_PDFs" \
   --icon=NONE \
   --distpath="dist" \
-  mover_pdfs_gui.py
+  main.py
 
 # Verificar se foi criado com sucesso
 if [ -f "dist/Mover_PDFs.exe" ]; then

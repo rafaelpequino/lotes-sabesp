@@ -17,7 +17,7 @@ REM Limpar builds anteriores
 echo [2/3] Limpando arquivos antigos...
 if exist "dist" rmdir /s /q dist 2>nul
 if exist "build" rmdir /s /q build 2>nul
-if exist "mover_pdfs_gui.spec" del mover_pdfs_gui.spec 2>nul
+if exist "main.spec" del main.spec 2>nul
 
 REM Criar o EXE
 echo [3/3] Gerando executavel... (isso pode levar 1-2 minutos)
@@ -30,7 +30,7 @@ pyinstaller ^
   --icon=NONE ^
   --manifest=build_config\Mover_PDFs.manifest ^
   --distpath="dist" ^
-  mover_pdfs_gui.py
+  main.py
 
 REM Verificar se foi criado com sucesso
 if exist "dist\Mover_PDFs.exe" (

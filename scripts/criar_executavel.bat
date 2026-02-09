@@ -29,10 +29,10 @@ if errorlevel 1 (
 echo [2/3] Removendo build anterior...
 if exist "dist" rmdir /s /q dist
 if exist "build" rmdir /s /q build
-if exist "mover_pdfs_gui.spec" del mover_pdfs_gui.spec
+if exist "main.spec" del main.spec
 
 echo [3/3] Convertendo para EXE...
-pyinstaller --onefile --windowed --icon=NONE --name="Mover_PDFs" mover_pdfs_gui.py
+pyinstaller --onefile --windowed --icon=NONE --name="Mover_PDFs" main.py
 
 if errorlevel 1 (
     echo ERRO ao criar executavel!
