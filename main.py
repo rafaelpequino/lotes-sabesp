@@ -106,11 +106,11 @@ class AutomacoesEPC:
                  cursor="hand2").pack(side=tk.LEFT, padx=(0, 5))
         
         tk.Button(frame_botoes, text="🧹 Limpar Histórico", command=self.limpar_terminal, 
-                 bg="#FF9800", fg="white", padx=15, pady=10, font=("Arial", 11),
+                 bg="#757575", fg="white", padx=15, pady=10, font=("Arial", 11),
                  cursor="hand2").pack(side=tk.LEFT, padx=(0, 5))
         
         tk.Button(frame_botoes, text="🧹 Limpar Tudo", command=self.limpar_campos, 
-                 bg="#FF9800", fg="white", padx=15, pady=10, font=("Arial", 11),
+                 bg="#757575", fg="white", padx=15, pady=10, font=("Arial", 11),
                  cursor="hand2").pack(side=tk.LEFT, padx=(0, 5))
         
         tk.Button(frame_botoes, text="✓ Verificar Destino", command=self.verificar_numeros, 
